@@ -60,6 +60,9 @@ a {
 /* *********************** 
  === Navigation start ===
 ***********************  */
+.object-fit {
+    object-fit: cover;
+}
 
 .grand-brand-nowbab {
     display: inline-block;
