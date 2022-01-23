@@ -3,6 +3,7 @@
     --secondary-color: #ff3f88;
     --bg-color: #5aa7ff;
     --body-color: #FFFBF0;
+    --box-shadow-1: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
 }
 
@@ -139,11 +140,12 @@ body {
 }
 
 .box-shadow-1 {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: var(--box-shadow-1);
 }
 
 /* **********************
-    === Navigation End ===
+    === Navigation End ===git add .
+    git commitgit
  === Carousel Templete Start ===
 ************************* */
 .animate-charcter {
