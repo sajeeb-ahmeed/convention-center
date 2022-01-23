@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #053555;
+    --secondary-color: #ff3f88;
+    --bg-color: #5aa7ff;
+    --body-color: #FFFBF0;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.color1 {
+    background-color: var(--primary-color);
+}
+
+.primary-color {
+    color: var(--primary-color) !important;
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.bg-color {
+    background-color: var(--bg-color);
+}
+
+.bg-2 {
+    background-color: var(--bg-color);
+}
+
+.body-color {
+    background-color: var(--body-color);
+}
+
+/* *********************** 
+ === Navigation start ===
+***********************  */
+
+.grand-brand-nowbab {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.grand-brand-nowbab:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--body-color);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.grand-brand-nowbab:hover,
+.grand-brand-nowbab:focus,
+.grand-brand-nowbab:active {
+    color: var(--bg-color);
+}
+
+.grand-brand-nowbab:hover:before,
+.grand-brand-nowbab:focus:before,
+.grand-brand-nowbab:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.shutter-out-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(93, 168, 238, 0.911);
+    position: relative;
+    background: var(--bg-color);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--body-color);
+    color: var(--body-color);
+    border-radius: 6px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.shutter-out-horizontal:hover,
+.shutter-out-horizontal:focus,
+.shutter-out-horizontal:active {
+    color: var(--body-color);
+}
+
+.shutter-out-horizontal:hover:before,
+.shutter-out-horizontal:focus:before,
+.shutter-out-horizontal:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* **********************
+ === Navigation End ===
+************************* /
