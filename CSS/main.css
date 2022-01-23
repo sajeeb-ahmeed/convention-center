@@ -4,7 +4,8 @@
     --bg-color: #5aa7ff;
     --body-color: #FFFBF0;
     --box-shadow-1: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    --pricing-btn: #b5eaff;
+    --box-shadow-2: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    --pricing-btn: #dcffe1;
 
 }
 
@@ -164,6 +165,10 @@ a {
 
 .box-shadow-1 {
     box-shadow: var(--box-shadow-1);
+}
+
+.box-shadow-2 {
+    box-shadow: var(--box-shadow-2);
 }
 
 /* **********************
