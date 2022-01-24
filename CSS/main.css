@@ -323,11 +323,12 @@ a {
 .contact-section textarea,
 .contact-section input[type=text],
 .contact-section input[type=email] {
-    background: #86bedf;
+    background: #acd7f0;
     opacity: 0.7;
     padding: 10px;
     outline: none;
     border: none;
+    border-radius: 7px;
     color: var(--body-color);
 }
 
