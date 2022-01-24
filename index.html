@@ -36,13 +36,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item shutter-out-horizontal">
-                            <a class="nav-link" href="#">About Us </a>
+                            <a class="nav-link" href="#aboutus">About Us </a>
                         </li>
                         <li class="nav-item shutter-out-horizontal">
-                            <a class="nav-link" href="#">Contact </a>
+                            <a class="nav-link" href="#contact">Contact </a>
                         </li>
                         <li class="nav-item shutter-out-horizontal">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#fequence">Subscribe</a>
                         </li>
 
                     </ul>
@@ -122,10 +122,10 @@
     <!-- === *** On-Quality *** === -->
 
     <main class="container-fulid my-5 my-lg-5">
-        <div class="container">
+        <div class="container" id="aboutus">
             <section class="row g-4 my-lg-5">
                 <div class="col-lg-6 col-sm-12 d-sm-flex justify-content-center  align-items-center">
-                    <img src="images/1.png" class="w-75  object-fit rounded-3" alt="">
+                    <img src="images/1.png" class="w-100 p-sm-3  object-fit rounded-3" alt="">
                 </div>
                 <div class="col-lg-6 col-sm-12 ">
                     <h1 class="primary-color fw-bolder text-uppercase">
@@ -143,6 +143,22 @@
                         </button>
                     </a>
 
+                    <!-- === toast === -->
+                    <div class="toast align-items-center show ms-auto me-3 mt-3 " role="alert" aria-live="assertive"
+                        aria-atomic="true">
+                        <div class="d-flex toast-color">
+                            <div>
+                                <img class="img-fluid mt-2 ms-4" src="./icons/Vector.svg" alt="">
+                            </div>
+                            <div class="toast-body">
+                                20% off on next booking
+                            </div>
+                            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                                aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <!-- ===2=== -->
+
                     <button type="button"
                         class="btn border-bottom secondary-color grand-brand-nowbab d-inline ms-5 d-inline mt-sm-2"
                         id="toastbtn">Show
@@ -150,12 +166,12 @@
 
                     <span class="ms-4 toast ">
                         <span class="toast-header">
-                            <strong class="ms-auto"> Pran Special Toast</strong>
+                            <strong class="ms-auto"> Special Toast</strong>
                             <button type="button" class="btn-close btn-outline-danger my-btn-pulse-grow"
                                 data-bs-dismiss="toast"> <br> Kete Felo</button>
                         </span>
                         <span class="toast-bodys">
-                            <p>Je jon khai seijon hoi mardana </p>
+                            <p> 40% off Next Deal </p>
                         </span>
                     </span>
 
@@ -164,8 +180,8 @@
             </section>
             <br><br><br>
             <!-- === *** Pakeges section *** ===  -->
-            <section class="row g-lg-3 my-5 mt-4 ">
-                <div class="col-lg-3 primary-color box-shadow-1 p-5 rounded-3 ">
+            <section class="row g-lg-3 my-5 mt-4 " id="offer">
+                <div class="col-lg-3 primary-color box-shadow-1 p-5 rounded-3 pakeges-bubble-effect">
                     <h3 class="fw-bold mb-3">$333</h3>
                     <h5 class="fw-bold ">Business fair</h5>
                     <small class="">For most businesses event
@@ -184,7 +200,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 primary-color box-shadow-1 p-5 rounded-3">
+                <div class="col-lg-3 primary-color box-shadow-1 p-5 rounded-3 pakeges-bubble-effect">
                     <h3 class="fw-bold mb-3">$668</h3>
                     <h5 class="fw-bold ">wedding basic</h5>
                     <small class="">For weddings with basic plan
@@ -203,7 +219,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 primary-color box-shadow-1 bg-primary position-relative rounded-3 shadow-lg p-1">
+                <div
+                    class="col-lg-3 primary-color box-shadow-1 bg-primary position-relative rounded-3 shadow-lg p-1 pakeges-bubble-effect">
                     <div>
                         <span class="badge position-absolute top px-4 py-3 pricing">30% Off</span>
                     </div>
@@ -227,7 +244,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 primary-color box-shadow-1 p-5 rounded-3">
+                <div class="col-lg-3 primary-color box-shadow-1 p-5 rounded-3 pakeges-bubble-effect curl-top-right">
                     <h3 class="fw-bold mb-3">$1900</h3>
                     <h5 class="fw-bold ">Corporate event</h5>
                     <small class="">For most corporate business
@@ -256,12 +273,12 @@
 
         <section class="container my-5 py-4">
 
-            <div class="row justify-content-between  g-2">
+            <div class="row justify-content-between  g-2" id="success">
                 <h1 class="mb-5 primary-color text-center fw-bolder text-uppercase"> Clients Review </h1>
                 <div
                     class="col-lg-3 col-sm-12 primary-color d-lg-flex flex-lg-column box-shadow-2 rounded-3 border-2 p-4">
                     <div class="align-items-center justify-content-center d-flex">
-                        <img src="images/clients-1.jpg" class="w-50 rounded-circle object-fit" alt="">
+                        <img src="images/clients-1.jpg" class="w-50 p-2 rounded-circle object-fit" alt="">
 
                     </div>
                     <div>
@@ -279,7 +296,7 @@
                 <div
                     class="col-lg-3 col-sm-12 primary-color d-lg-flex flex-lg-column box-shadow-2 rounded-3 border-2 p-4">
                     <div class="align-items-center justify-content-center d-flex">
-                        <img src="images/clients-2.jpg" class="w-50 rounded-circle object-fit" alt="">
+                        <img src="images/clients-2.jpg" class="w-50 p-2 rounded-circle object-fit" alt="">
 
                     </div>
                     <div>
@@ -295,7 +312,7 @@
                 <div
                     class="col-lg-3 col-sm-12 primary-color d-lg-flex flex-lg-column box-shadow-2 rounded-3 border-2 p-4">
                     <div class="align-items-center justify-content-center d-flex">
-                        <img src="images/clients-3.jpg" class="w-50 m-auto  rounded-circle object-fit" alt="">
+                        <img src="images/clients-3.jpg" class="w-50 p-2 m-auto  rounded-circle object-fit" alt="">
 
                     </div>
                     <div>
@@ -311,7 +328,222 @@
 
         </section>
         <!-- === *** Reviews Section Ends*** ===  -->
+        <!-- === *** Frequently Asked Questions *** === -->
+        <section class="container my-4" id="fequence">
+            <h1 class="primary-color  text-center fw-bolder my-4 text-uppercase ">Frequently Asked Questions
+            </h1>
+            <div class="row g-2 justify-content-between align-items-center">
+
+                <div class="col-lg-5 col-sm-12 my-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    19th-century exhibition halls
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The original convention centers or halls were in castles and palaces.
+                                    Originally a hall in a castle would be designed to allow a large group of lords,
+                                    knights and government officials to attend important meetings with the king. A
+                                    more ancient tradition would have the king or lord decide disputes among his
+                                    people. These administrative actions would be done in the great hall and would
+                                    exhibit the wisdom of the king as judge to the general populace.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Types
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Meeting facilities with lodging: hotels that include their own convention
+                                    space in addition to accommodation and other related facilities, known as
+                                    convention hotels.
+                                    Meeting facilities without lodging: are convention centers that do not include
+                                    accommodation; usually located adjacent to or near a hotel
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Others
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The original convention centers or halls were in castles and
+                                    palaces.Other: any convention and
+                                    meeting facilities designed to hold large numbers of people. Can exist alone (e.g.,
+                                    stadiums, arenas, parks, etc.) or within other structures (e.g., university lecture
+                                    halls, museums, theaters). Usually do not include accommodation
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    History
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The decision hold the Universal Exposition of 1900 in Paris revealed deep divisions
+                                    within the French Republic. Critics viewed the project as an economic drain that
+                                    pulled resources away from provincial governments and questioned the benefit that it
+                                    would bring to the French economy as a whole. These concerns extended to the
+                                    planning and construction of the Grand Palais
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 ">
+                    <div>
+                        <img src="images/4.png" class="w-100 p-4 rounded-3" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- === *** Get in Touch *** ===  -->
+        <div class="container-fluid m-3 " id="contact">
+            <div class="row g-3 container primary-color fw-bold">
+
+                <h1 class="text-uppercase text-center primary-color fw-bolder my-5">GET IN TOUCH</h1>
+                <div class="col-lg-6 col-md-12 d-flex justify-content-evenly align-items-center">
+                    <ul class="d-flex flex-column me-4 cursor-pointer">
+                        <li class="d-flex  list-unstyled my-2 align-items-center">
+                            <div class="circle "><i class="fas fa-home"></i></div> Narsingdi, Dhaka
+                        </li>
+                        <li class="d-flex list-unstyled my-2 align-items-center">
+                            <div class="circle"><i class="fas fa-phone"></i></div> +0 1748402018
+                        </li>
+                        <li class="d-flex  list-unstyled my-2 align-items-center">
+                            <div class="circle">
+                                <i class="fas fa-envelope"></i></div> sajeeb.web@gmail.com
+                        </li>
+                        <li class="d-flex  list-unstyled my-2 align-items-center">
+                            <div class="circle"><i class="fas fa-clock"></i></div> Mon - Fri 8:00 AM to 4:00 PM
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class=" col-lg-6 col-md-12 contact-section flex-wrap justify-content-sm-center align-items-sm-center">
+                    <input class="m-3" type="text" placeholder="Name">
+                    <input class="m-3" type="email" placeholder="E-mail"> <br>
+
+                    <textarea class="ms-3 w-75" name="" id="" placeholder="Drop Your Message Here..." cols="55"
+                        rows="10"></textarea> <br> <br>
+                    <button class=" px-4 ms-3 btn-outline-dark  my-btn-pulse-grow" type="submit">Send</button>
+                    <br><br>
+                </div>
+            </div>
+
+        </div>
+        </div>
     </main>
+    <!-- === *** Footer *** ===  -->
+
+    <footer class="footer">
+        <div class="footer-color text-white">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 p-3">
+                        <div class=" widget no-box">
+                            <h3 class="widget-title  fw-bold text-uppercase">The Grandnobab<span></span>
+                            </h3>
+                            <p> Your Trusted Convention Center . </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 text-white">
+                        <div class="p-3 mb-2no-box p-3 justify-content-evenly">
+                            <h5 class="widget-title  fw-bold text-uppercase mb-3">Quick Links<span></span></h5>
+                            <ul class="thumbnail-widget text-white ">
+                                <li>
+                                    <div class="thumb-content"><a href="#carouselExampleCaptions">Get Started</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#offer">Top Offer </a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#success">Success Stories</a></div>
+                                </li>
+
+                                <li>
+                                    <div class="thumb-content"><a href="#contact">About</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="p-3 mb-2 no-box">
+                            <h5 class="widget-title fw-bold text-uppercase">Get Started<span></span></h5>
+                            <p class="mb-3">Get access to your full Training and Marketing Suite.</p>
+                            <a class="btn btn-outline-light" href="https://module-notes.cebacbd.com/"
+                                target="_blank">Subscribe Now</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+
+                        <div class="p-3 mb-2 no-box">
+                            <h4 class=" animate-charcter">Download Apss Now! <span></span></h4>
+
+
+                            <ul class="d-flex g-3 m-3 justify-content-between">
+                                <li class=""><a title="Apple" target="_blank"
+                                        href="https://apps.apple.com/app/apple-store/id304878510"><img
+                                            alt="apple play store" width="130" height="40"
+                                            src="images/app-store.png"></a>
+                                </li>
+                                <li class=""><a
+                                        href="https://play.google.com/store/apps/details?id=com.skype.raider&referrer=utm_source%3Dscomphonedownload"
+                                        target="_blank" title="Play Store"><img alt="Play Store" width="130" height="40"
+                                            src="images/google-play.png"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="gray">Copyright GrandNobab &copy; 2022. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- === *** Footer End *** ===  -->
+    <!-- /* === *** HAPPY CODEING *** ===  */ -->
 
     <script>
         document.getElementById("toastbtn").onclick = function () {

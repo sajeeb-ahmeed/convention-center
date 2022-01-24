@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #004472;
     --secondary-color: #ff3f88;
@@ -6,6 +12,8 @@
     --box-shadow-1: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     --box-shadow-2: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     --pricing-btn: #dcffe1;
+    --footer-color: #252525;
+    --gray: rgb(104, 104, 104);
 
 }
 
@@ -13,6 +21,7 @@
 
 body {
     font-family: 'Fjalla One', sans-serif;
+
 }
 
 .color1 {
@@ -35,6 +44,10 @@ body {
     color: var(--bg-color);
 }
 
+.gray {
+    color: var(--gray);
+}
+
 .pricing {
     background-color: var(--secondary-color);
 }
@@ -54,9 +67,20 @@ body {
     background-color: var(--body-color);
 }
 
+.footer-color {
+    background-color: var(--footer-color);
+}
+
+li {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
+    color: var(--body-color);
 }
+
+
 
 /* *********************** 
  === Navigation start ===
@@ -172,8 +196,7 @@ a {
 }
 
 /* **********************
-    === Navigation End ===git add .
-    git commitgit
+      === Navigation End ===
  === Carousel Templete Start ===
 ************************* */
 .animate-charcter {
@@ -220,10 +243,161 @@ a {
     animation-direction: alternate;
 }
 
-/* === *** === Random  */
+/* === packegs === */
+.pakeges-bubble-effect {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    border-top: .1px solid rgb(245, 245, 245);
+    box-shadow: 0 0 1px rgba(73, 73, 73, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.pakeges-bubble-effect:before {
+    position: absolute;
+    z-index: -100;
+    content: '';
+    left: calc(50% - 10px);
+    top: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    opacity: 0.1;
+
+}
+
+.pakeges-bubble-effect:hover,
+.pakeges-bubble-effect:focus,
+.pakeges-bubble-effect:active {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+.pakeges-bubble-effect:hover:before,
+.pakeges-bubble-effect:focus:before,
+.pakeges-bubble-effect:active:before {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 1;
+    border-color: transparent transparent #adaaaa transparent;
+}
+
+/* === *** === Get in Touch  */
 .top {
     top: -18px;
     left: 90px;
     margin-left: 90px;
+    border-radius: 25px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    margin-right: 15px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+
+
+.contact-section textarea {
+    grid-column: 1 / -1;
+    resize: none;
 
 }
+
+.contact-section textarea,
+.contact-section input[type=text],
+.contact-section input[type=email] {
+    background: #86bedf;
+    opacity: 0.7;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: var(--body-color);
+}
+
+
+
+#contact {
+    background-image: url(../images/aaron-burden-cEukkv42O40-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* === *** Footer *** ===  */
+
+/* Copy Right Footer */
+.footer-copyright {
+    background: #222;
+    padding: 5px 0;
+}
+
+.footer-copyright .logo {
+    display: inherit;
+}
+
+
+
+/*==================== 
+	Widgets 
+====================== */
+.widget {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.widget.no-box {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 40px;
+    box-shadow: none;
+}
+
+.widget li a:hover {
+    color: var(--primary-color);
+}
+
+.widget-title span {
+    background: #839FAD none repeat scroll 0 0;
+    display: block;
+    height: 1px;
+    margin-top: 25px;
+    position: relative;
+    width: 20%;
+}
+
+.widget-title span::after {
+    background: inherit;
+    content: "";
+    height: inherit;
+    position: absolute;
+    top: -4px;
+    width: 50%;
+}
+
+.widget-title.text-center span,
+.widget-title.text-center span::after {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+
+/* === *** HAPPY CODEING *** ===  */
