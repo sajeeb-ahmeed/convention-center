@@ -11,6 +11,17 @@
     box-sizing: border-box;
 } */
 
+
+input:required+label::before {
+    content: "**";
+    color: red;
+}
+
+input:required+label:before {
+    content: " * ";
+    color: red;
+}
+
 .primary-color {
     color: var(--primary-color);
 }
